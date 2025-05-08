@@ -10,6 +10,14 @@
     <link rel="stylesheet" href="styles/all.min.css" />
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/container.css" />
+    <link rel="stylesheet" href="styles/section.css" />
+    <link rel="stylesheet" href="styles/special-heading.css" />
+
+    <!-- Sections Stylings -->
+    <link rel="stylesheet" href="styles/landing.css" />
+    <link rel="stylesheet" href="styles/articles.css" />
+    <link rel="stylesheet" href="styles/gallery.css" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -107,21 +115,129 @@
         </div>
     </header>
 
-    <div class="landing">
-       <div class="container">
-           <div class="text">
-               <h1>Welcome To Our Responsive Template</h1>
-               <p>Allow me to share my skills of responsive design because HTML/CSS coding is fun :)</p>
-               
-               <p> <i class="fas fa-quote-left"></i> I give cridit for the web-page design to Osama Elzero <i class="fas fa-quote-right"></i> </p>
-           </div>
-           <div class="image">
-               <img src="images/landing-image.png" alt="landing">
-           </div>
-       </div> 
-       <div class="down">
-           <i class="fas fa-angle-down"></i>
-       </div>
+    <div id="landing">
+        <div class="container">
+            <div class="text">
+                <h1>Welcome To Our Responsive Template</h1>
+                <p>Allow me to share my skills of responsive design because HTML/CSS coding is fun :)</p>
+
+                <p> <i class="fas fa-quote-left"></i> I give cridit for the web-page design to Osama Elzero <i
+                        class="fas fa-quote-right"></i> </p>
+            </div>
+            <div class="image">
+                <img src="images/landing-image.png" alt="landing">
+            </div>
+        </div>
+        <a href="#articles">
+            <div class="down">
+                <i class="fas fa-angle-down"></i>
+            </div>
+        </a>
+    </div>
+
+    <div class="section" id="articles">
+        <div class="container">
+            <div class="special-heading">
+                <h2>Articles</h2>
+            </div>
+            <div class="article-cards">
+                <div class="card">
+                    <div class="image"><img src="images/cat-01.jpg" alt="article image"></div>
+                    <div class="text">
+                        <h3>Test Title</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, reprehenderit?</p>
+                    </div>
+                    <div class="navigation"><a href="#">Read More</a><i class="fas fa-long-arrow-alt-right"></i></div>
+                </div>
+                <div class="card">
+                    <div class="image"><img src="images/cat-02.jpg" alt="article image"></div>
+                    <div class="text">
+                        <h3>Test Title</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, reprehenderit?</p>
+                    </div>
+                    <div class="navigation"><a href="#">Read More</a><i class="fas fa-long-arrow-alt-right"></i></div>
+                </div>
+                <div class="card">
+                    <div class="image"><img src="images/cat-03.jpg" alt="article image"></div>
+                    <div class="text">
+                        <h3>Test Title</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, reprehenderit?</p>
+                    </div>
+                    <div class="navigation"><a href="#">Read More</a><i class="fas fa-long-arrow-alt-right"></i></div>
+                </div>
+                <div class="card">
+                    <div class="image"><img src="images/cat-04.jpg" alt="article image"></div>
+                    <div class="text">
+                        <h3>Test Title</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, reprehenderit?</p>
+                    </div>
+                    <div class="navigation"><a href="#">Read More</a><i class="fas fa-long-arrow-alt-right"></i></div>
+                </div>
+                <div class="card">
+                    <div class="image"><img src="images/cat-05.jpg" alt="article image"></div>
+                    <div class="text">
+                        <h3>Test Title</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, reprehenderit?</p>
+                    </div>
+                    <div class="navigation"><a href="#">Read More</a><i class="fas fa-long-arrow-alt-right"></i></div>
+                </div>
+                <div class="card">
+                    <div class="image"><img src="images/cat-06.jpg" alt="article image"></div>
+                    <div class="text">
+                        <h3>Test Title</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, reprehenderit?</p>
+                    </div>
+                    <div class="navigation"><a href="#">Read More</a><i class="fas fa-long-arrow-alt-right"></i></div>
+                </div>
+                <div class="card">
+                    <div class="image"><img src="images/cat-07.jpg" alt="article image"></div>
+                    <div class="text">
+                        <h3>Test Title</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, reprehenderit?</p>
+                    </div>
+                    <div class="navigation"><a href="#">Read More</a><i class="fas fa-long-arrow-alt-right"></i></div>
+                </div>
+                <div class="card">
+                    <div class="image"><img src="images/cat-08.jpg" alt="article image"></div>
+                    <div class="text">
+                        <h3>Test Title</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, reprehenderit?</p>
+                    </div>
+                    <div class="navigation"><a href="#">Read More</a><i class="fas fa-long-arrow-alt-right"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section dark" id="gallery">
+        <div class="container">
+            <div class="special-heading">
+                <h2>
+                    Gallery
+                </h2>
+            </div>
+
+            <div class="gallery-boxes">
+                <div class="box">
+                    <div class="image"><img src="images/gallery-01.png" alt="gallery image"></div>
+                </div>
+                <div class="box">
+                    <div class="image"><img src="images/gallery-02.png" alt="gallery image"></div>
+                </div>
+                <div class="box">
+                    <div class="image"><img src="images/gallery-03.jpg" alt="gallery image"></div>
+                </div>
+                <div class="box">
+                    <div class="image"><img src="images/gallery-04.png" alt="gallery image"></div>
+                </div>
+                <div class="box">
+                    <div class="image"><img src="images/gallery-05.jpg" alt="gallery image"></div>
+                </div>
+                <div class="box">
+                    <div class="image"><img src="images/gallery-06.png" alt="gallery image"></div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 

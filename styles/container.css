@@ -1,0 +1,20 @@
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: 770px) {
+        width: 750px;
+    }
+
+    @media (min-width: 1000px) {
+        width: 970px;
+    }
+
+    @media (min-width: 1200px) {
+        width: 1180px;
+    }
+}
+
+

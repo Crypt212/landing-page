@@ -1,0 +1,132 @@
+
+#landing {
+
+    .container {
+        height: calc(100vh - var(--header-size));
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        padding-bottom: calc(var(--header-size) + 30px);
+
+        >* {
+            flex: 1;
+        }
+
+        .text {
+            max-width: 500px;
+
+            h1 {
+                letter-spacing: -2px;
+                font-size: 2.5em;
+            }
+
+            p {
+                font-size: 1.4em;
+                color: #666;
+                margin: 10px 0;
+                line-height: 1.6;
+            }
+
+            p:last-child {
+                position: absolute;
+                top: 80%;
+                left: 50%;
+                transform: translateX(-50%);
+                font-size: 1em;
+                color: #666;
+                text-align: center;
+
+                i:first-child {
+                    position: absolute;
+                    top: -50%;
+                    left: -10%;
+                }
+
+                i:last-child {
+                    position: absolute;
+                    top: 50%;
+                    right: -10%;
+                }
+            }
+        }
+
+        .image>img {
+            max-width: 100%;
+            animation: image-hover-in-space 5s ease-in-out infinite;
+        }
+
+        @media (max-width: 770px) {
+
+            .image,
+            .text>p:last-child {
+                display: none;
+            }
+
+            .text {
+                text-align: center;
+
+                h1 {
+                    font-size: 1.8em;
+                }
+
+                p {
+                    font-size: 1.2em;
+                    margin: 5px 0;
+                }
+
+            }
+        }
+    }
+
+    .down {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        font-size: 2em;
+        color: var(--main-color);
+        animation: arrow-hover-in-space 1s ease-in-out infinite;
+    }
+
+    .down:hover {
+        text-shadow: 0 0 7px var(--main-color);
+        transition: var(--main-transition);
+    }
+}
+
+#landing::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: skewY(-6deg);
+    transform-origin: top left;
+    background-color: #eee;
+    z-index: -1
+}
+
+@keyframes image-hover-in-space {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes arrow-hover-in-space {
+
+    0%,
+    100% {
+        transform: translate(-50%, 0);
+    }
+
+    50% {
+        transform: translate(-50%, -10px);
+    }
+}
