@@ -59,19 +59,23 @@
         .card:hover {
             transform: translateY(-5%);
             box-shadow: 0 5px 20px color-mix(in srgb, var(--main-color) 15%, var(--section-background));
-            > .navigation > i {
-                animation: arrow-go 0.8s infinite;
+
+            >.navigation i {
+                animation: arrow-go 0.8s linear infinite;
             }
         }
 
     }
+}
 
-    @keyframes arrow-go {
-        0%, 100% {
-            margin-right: 0;
-        }
-        50% {
-            margin-right: 5px;
-        }
+@keyframes arrow-go {
+
+    0%,
+    100% {
+        margin-right: 0;
+    }
+
+    50% {
+        margin-right: 5px;
     }
 }
